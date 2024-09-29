@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #236b81 0%, #ffffff 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 15px;
+    font-size: 1.2rem;
+    width: calc(100% - 30px);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #3b0fff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b47049;
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#result.correct {
+    color: #28a745;
+}
+
+#result.wrong {
+    color: #dc3545;
+}
